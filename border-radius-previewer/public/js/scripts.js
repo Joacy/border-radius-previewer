@@ -1,35 +1,99 @@
+let topleft1;
+let topleft2;
+
 document
-    .getElementById("topleft")
+    .getElementById("topleft1")
     .addEventListener('change', function () {
-        var topleft = document.getElementById("topleft").value;
-        console.log(topleft);
-        if (topleft >= 150) topleft = 150;
-        document.getElementById("caixa").style.borderTopLeftRadius = topleft + "px";
+        topleft1 = document.getElementById("topleft1").value;
+        topleft2 = document.getElementById("topleft2").value;
+        console.log(topleft1);
+        if (topleft1 >= 150) topleft1 = 150;
+        if (topleft2 >= 150) topleft2 = 150;
+        document.getElementById("caixa").style.borderTopLeftRadius = topleft1 + "px" + " " + topleft2 + "px";
     });
 
 document
-    .getElementById("topright")
+    .getElementById("topleft2")
     .addEventListener('change', function () {
-        var topright = document.getElementById("topright").value;
-        console.log(topright);
-        if (topright >= 150) topright = 150;
-        document.getElementById("caixa").style.borderTopRightRadius = topright + "px";
+        topleft1 = document.getElementById("topleft1").value;
+        topleft2 = document.getElementById("topleft2").value;
+        console.log(topleft2);
+        if (topleft1 >= 150) topleft1 = 150;
+        if (topleft2 >= 150) topleft2 = 150;
+        document.getElementById("caixa").style.borderTopLeftRadius = topleft1 + "px" + " " + topleft2 + "px";
+    });
+
+let topright1;
+let topright2;
+
+document
+    .getElementById("topright1")
+    .addEventListener('change', function () {
+        topright1 = document.getElementById("topright1").value;
+        topright2 = document.getElementById("topright2").value;
+        console.log(topright1);
+        if (topright1 >= 150) topright1 = 150;
+        if (topright2 >= 150) topright2 = 150;
+        document.getElementById("caixa").style.borderTopRightRadius = topright1 + "px" + " " + topright2 + "px";
     });
 
 document
-    .getElementById("bottomleft")
+    .getElementById("topright2")
     .addEventListener('change', function () {
-        var bottomleft = document.getElementById("bottomleft").value;
-        console.log(bottomleft);
-        if (bottomleft >= 150) bottomleft = 150;
-        document.getElementById("caixa").style.borderBottomLeftRadius = bottomleft + "px";
+        topright1 = document.getElementById("topright1").value;
+        topright2 = document.getElementById("topright2").value;
+        console.log(topright2);
+        if (topright1 >= 150) topright1 = 150;
+        if (topright1 >= 150) topright2 = 150;
+        document.getElementById("caixa").style.borderTopRightRadius = topright1 + "px" + " " + topright2 + "px";
+    });
+
+let bottomleft1;
+let bottomleft2;
+
+document
+    .getElementById("bottomleft1")
+    .addEventListener('change', function () {
+        bottomleft1 = document.getElementById("bottomleft1").value;
+        bottomleft2 = document.getElementById("bottomleft2").value;
+        console.log(bottomleft1);
+        if (bottomleft1 >= 150) bottomleft1 = 150;
+        if (bottomleft2 >= 150) bottomleft2 = 150;
+        document.getElementById("caixa").style.borderBottomLeftRadius = bottomleft1 + "px" + " " + bottomleft2 + "px";
     });
 
 document
-    .getElementById("bottomright")
+    .getElementById("bottomleft2")
     .addEventListener('change', function () {
-        var bottomright = document.getElementById("bottomright").value;
-        console.log(bottomright);
-        if (bottomright >= 150) bottomright = 150;
-        document.getElementById("caixa").style.borderBottomRightRadius = bottomright + "px";
+        bottomleft1 = document.getElementById("bottomleft1").value;
+        bottomleft2 = document.getElementById("bottomleft2").value;
+        console.log(bottomleft2);
+        if (bottomleft1 >= 150) bottomleft1 = 150;
+        if (bottomleft2 >= 150) bottomleft2 = 150;
+        document.getElementById("caixa").style.borderBottomLeftRadius = bottomleft1 + "px" + " " + bottomleft2 + "px";
+    });
+
+let bottomright1;
+let bottomright2;
+
+document
+    .getElementById("bottomright1")
+    .addEventListener('change', function () {
+        bottomright1 = document.getElementById("bottomright1").value;
+        bottomright2 = document.getElementById("bottomright2").value;
+        console.log(bottomright1);
+        if (bottomright1 >= 150) bottomright1 = 150;
+        if (bottomright2 >= 150) bottomright2 = 150;
+        document.getElementById("caixa").style.borderBottomRightRadius = bottomright1 + "px" + " " + bottomright2 + "px";
+    });
+
+document
+    .getElementById("bottomright2")
+    .addEventListener('change', function () {
+        bottomright1 = document.getElementById("bottomright1").value;
+        bottomright2 = document.getElementById("bottomright2").value;
+        console.log(bottomright2);
+        if (bottomright1 >= 150) bottomright1 = 150;
+        if (bottomright2 >= 150) bottomright2 = 150;
+        document.getElementById("caixa").style.borderBottomRightRadius = bottomright1 + "px" + " " + bottomright2 + "px";
     });
