@@ -47,7 +47,7 @@ document
         topright2 = document.getElementById("topright2").value;
         console.log(topright2);
         if (topright1 >= 150) topright1 = 150;
-        if (topright1 >= 150) topright2 = 150;
+        if (topright2 >= 150) topright2 = 150;
         document.getElementById("caixa").style.borderTopRightRadius = topright1 + "px" + " " + topright2 + "px";
         document.getElementById("btr").innerText = topright1 + "px" + " " + topright2 + "px";
     });
@@ -104,4 +104,29 @@ document
         if (bottomright2 >= 150) bottomright2 = 150;
         document.getElementById("caixa").style.borderBottomRightRadius = bottomright1 + "px" + " " + bottomright2 + "px";
         document.getElementById("bbr").innerText = bottomright1 + "px" + " " + bottomright2 + "px";
+    });
+
+function setTexto () {
+    document
+        .getElementById("conteudoCopiar").innerHTML =
+        "border-top-left-radius: " +
+        document.getElementById("topleft1").value + "px " +
+        document.getElementById("topleft2").value + "px;\n" +
+        "border-top-right-radius: " +
+        document.getElementById("topright1").value + "px " +
+        document.getElementById("topright2").value + "px;\n" +
+        "border-bottom-left-radius: " +
+        document.getElementById("bottomleft1").value + "px " +
+        document.getElementById("bottomleft2").value + "px;\n" +
+        "border-bottom-right-radius: " +
+        document.getElementById("bottomright1").value + "px " +
+        document.getElementById("bottomright2").value + "px;";
+}
+
+document
+    .getElementById("botaoCopiar").addEventListener('click', function () {
+        setTexto();
+        var copiarTexto = document.getElementById("conteudoCopiar");
+        copiarTexto.select();
+        document.execCommand("copy");
     });

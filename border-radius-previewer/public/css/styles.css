@@ -75,6 +75,10 @@ main .caixa .conteudo p {
   font-size: 14px;
 }
 
+main .caixa .conteudo textarea {
+  opacity: 0;
+}
+
 main .caixa .conteudo {
   display: flex;
   flex-direction: column;
