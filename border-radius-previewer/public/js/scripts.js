@@ -10,6 +10,7 @@ document
         if (topleft1 >= 150) topleft1 = 150;
         if (topleft2 >= 150) topleft2 = 150;
         document.getElementById("caixa").style.borderTopLeftRadius = topleft1 + "px" + " " + topleft2 + "px";
+        document.getElementById("btl").innerText = topleft1 + "px" + " " + topleft2 + "px";
     });
 
 document
@@ -21,6 +22,7 @@ document
         if (topleft1 >= 150) topleft1 = 150;
         if (topleft2 >= 150) topleft2 = 150;
         document.getElementById("caixa").style.borderTopLeftRadius = topleft1 + "px" + " " + topleft2 + "px";
+        document.getElementById("btl").innerText = topleft1 + "px" + " " + topleft2 + "px";
     });
 
 let topright1;
@@ -35,6 +37,7 @@ document
         if (topright1 >= 150) topright1 = 150;
         if (topright2 >= 150) topright2 = 150;
         document.getElementById("caixa").style.borderTopRightRadius = topright1 + "px" + " " + topright2 + "px";
+        document.getElementById("btr").innerText = topright1 + "px" + " " + topright2 + "px";
     });
 
 document
@@ -46,6 +49,7 @@ document
         if (topright1 >= 150) topright1 = 150;
         if (topright1 >= 150) topright2 = 150;
         document.getElementById("caixa").style.borderTopRightRadius = topright1 + "px" + " " + topright2 + "px";
+        document.getElementById("btr").innerText = topright1 + "px" + " " + topright2 + "px";
     });
 
 let bottomleft1;
@@ -60,6 +64,7 @@ document
         if (bottomleft1 >= 150) bottomleft1 = 150;
         if (bottomleft2 >= 150) bottomleft2 = 150;
         document.getElementById("caixa").style.borderBottomLeftRadius = bottomleft1 + "px" + " " + bottomleft2 + "px";
+        document.getElementById("bbl").innerText = bottomleft1 + "px" + " " + bottomleft2 + "px";
     });
 
 document
@@ -71,6 +76,7 @@ document
         if (bottomleft1 >= 150) bottomleft1 = 150;
         if (bottomleft2 >= 150) bottomleft2 = 150;
         document.getElementById("caixa").style.borderBottomLeftRadius = bottomleft1 + "px" + " " + bottomleft2 + "px";
+        document.getElementById("bbl").innerText = bottomleft1 + "px" + " " + bottomleft2 + "px";
     });
 
 let bottomright1;
@@ -85,6 +91,7 @@ document
         if (bottomright1 >= 150) bottomright1 = 150;
         if (bottomright2 >= 150) bottomright2 = 150;
         document.getElementById("caixa").style.borderBottomRightRadius = bottomright1 + "px" + " " + bottomright2 + "px";
+        document.getElementById("bbr").innerText = bottomright1 + "px" + " " + bottomright2 + "px";
     });
 
 document
@@ -96,4 +103,5 @@ document
         if (bottomright1 >= 150) bottomright1 = 150;
         if (bottomright2 >= 150) bottomright2 = 150;
         document.getElementById("caixa").style.borderBottomRightRadius = bottomright1 + "px" + " " + bottomright2 + "px";
+        document.getElementById("bbr").innerText = bottomright1 + "px" + " " + bottomright2 + "px";
     });
